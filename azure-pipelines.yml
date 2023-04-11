@@ -21,9 +21,18 @@ steps:
 - script: |
     echo Starting install...
     npm install
+  displayName: 'npm install'
+  
+- script: |
     echo Starting building...
     npm run build
+  displayName: 'npm build'
+
+- script: |
     echo Starting testing...
     npm test
     echo Finish pipeline...
-  displayName: 'npm install, build, and test'
+  displayName: 'npm test'
+
+
+
