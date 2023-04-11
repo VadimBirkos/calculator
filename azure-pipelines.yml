@@ -19,7 +19,7 @@ steps:
 
 - script: |
     echo Starting install...
-    npm install
+    npm audit fix --force
   displayName: 'npm install'
   
 - script: |
